@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the entire site
+# This is an unblocked games website that should be discoverable
+
+# Disallow crawling of script and asset directories that don't need indexing
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /assets/scripts/
+Disallow: /assets/promo0/
+Disallow: /media/plugins/
+
+# Allow crawling of important asset directories
+Allow: /media/posts/
+Allow: /media/tags/
+Allow: /media/website/
+Allow: /assets/img/
+Allow: /assets/images/
+
+# Disallow PowerShell scripts and temporary files
+Disallow: /*.ps1
+Disallow: /*.csv
+Disallow: /*.md
+
+# Sitemap location
+Sitemap: https://hoodamath-games.github.io/sitemap.xml
